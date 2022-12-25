@@ -1,0 +1,16 @@
+{
+  "name": "directory-api",
+  "version": "1.0.0",
+  "description": "just a simple api which use local directory",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["directory-api","simple-api", "localhost"],
+  "author": "Alι_Aryαɴ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0"
+  }
+}
