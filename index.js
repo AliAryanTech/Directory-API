@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 app.get('/random', (req, res) => {
   const directory = '/directory/'
   const files = readdirSync(`.${directory}`)
-  let randomFile = files[Math.floor(Math.random() * files.length)]
+  const randomFile = files[Math.floor(Math.random() * files.length)]
   res.sendFile(path + directory + randomFile)
 })
 
