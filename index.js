@@ -2,9 +2,7 @@ const app = require('express')()
 const { readdirSync } = require('fs-extra')
 path = process.cwd()
 
-app.get('/', (req, res) => {
-  res.send('Hello Oni-Chan')
-})
+app.get('/', (req, res) => res.send('Hello Oni-Chan'))
 
 app.get('/random', (req, res) => {
   const directory = '/directory/'
@@ -14,6 +12,4 @@ app.get('/random', (req, res) => {
 })
 
 app.get('*', (req, res) => res.sendStatus(404))
-app.listen(8080, () => {
-  console.log(`Port is Running 8080`)
-})
+app.listen(8080, () => console.log(`Port is Running 8080`))
